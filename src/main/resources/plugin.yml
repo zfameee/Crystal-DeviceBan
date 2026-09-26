@@ -1,0 +1,23 @@
+name: Crystal-DeviceBan
+version: 1.0.0
+main: ru.crystaldeviceban.Crystal-DeviceBanPlugin
+api-version: '1.21'
+author: OpenAI
+description: Server-side connection fingerprint bans for Purpur 1.21.11.
+commands:
+  crystaldeviceban:
+    description: Bans a player's connection fingerprint.
+    usage: /crystaldeviceban <player> [reason]
+    permission: crystaldeviceban.ban
+  deviceunban:
+    description: Removes a fingerprint ban.
+    usage: /deviceunban <fingerprint>
+    permission: crystaldeviceban.unban
+  deviceinfo:
+    description: Shows the current connection fingerprint.
+    usage: /deviceinfo [player]
+    permission: crystaldeviceban.info
+permissions:
+  crystaldeviceban.ban: {default: op}
+  crystaldeviceban.unban: {default: op}
+  crystaldeviceban.info: {default: op}

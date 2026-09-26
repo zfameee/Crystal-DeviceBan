@@ -1,0 +1,11 @@
+# IMPORTANT: Minecraft/Purpur does not expose a true hardware/serial identifier to a server.
+# The default fingerprint is SHA-256(IP).
+# It is deliberately hashed so raw IP addresses are not stored in bans.yml.
+fingerprint:
+  include-ip: true
+  include-client-brand: false
+  include-locale: false
+messages:
+  banned: "&cДоступ запрещён. Это устройство/подключение заблокировано."
+  ban-created: "&aОтпечаток заблокирован: &f{id}"
+  unbanned: "&aОтпечаток разблокирован: &f{id}"
