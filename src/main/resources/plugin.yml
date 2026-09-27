@@ -1,23 +1,32 @@
 name: Crystal-DeviceBan
 version: 1.0.0
-main: ru.deviceban.CrystalDeviceBanPlugin
+main: ru.crystaldeviceban.CrystalDeviceBanPlugin
 api-version: '1.21'
 author: zfameee
 description: Device connection ban plugin for Purpur
+
 commands:
   crystaldeviceban:
-    description: Bans a player's connection fingerprint.
+    description: Заблокировать подключение игрока
     usage: /crystaldeviceban <player> [reason]
     permission: crystaldeviceban.ban
+
   deviceunban:
-    description: Removes a fingerprint ban.
+    description: Снять блокировку
     usage: /deviceunban <fingerprint>
     permission: crystaldeviceban.unban
+
   deviceinfo:
-    description: Shows the current connection fingerprint.
+    description: Показать fingerprint игрока
     usage: /deviceinfo [player]
     permission: crystaldeviceban.info
+
 permissions:
-  crystaldeviceban.ban: {default: op}
-  crystaldeviceban.unban: {default: op}
-  crystaldeviceban.info: {default: op}
+  crystaldeviceban.ban:
+    default: op
+
+  crystaldeviceban.unban:
+    default: op
+
+  crystaldeviceban.info:
+    default: op
